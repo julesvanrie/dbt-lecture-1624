@@ -8,3 +8,5 @@ sources:
         identifier: raw_cc_sales
       - name: stock
         identifier: raw_cc_stock
+      - name: parcel
+        identifier: raw_cc_parcel
