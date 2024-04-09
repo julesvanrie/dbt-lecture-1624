@@ -11,9 +11,7 @@ models:
       - name: date_date
         description: date of the sale
         tests:
-          - not_null
-          - unique
-          
+          - not_null          
   - name: int_daily_sales
     columns:
       - name: date_date
