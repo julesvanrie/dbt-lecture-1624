@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: int_sales_stock
+    description: Joining sales and stock together
+    columns:
+      - name: product_id
+        description: Unique product id conssisting of model, color, size
+        tests:
+          - not_null
+      - name: date_date
+        description: date of the sale
+        tests:
+          - not_null
+          - unique
+          
+  - name: int_daily_sales
+    columns:
+      - name: date_date
+        tests:
+          - not_null
+          - unique
+          
+          
