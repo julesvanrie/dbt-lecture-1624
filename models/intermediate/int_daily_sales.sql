@@ -1,10 +1,10 @@
 select
-    date_date,
+    date_date
     ,extract(year from date_date) as year
     ,extract(month from date_date) as month
     ,extract(week from date_date) as week
     ,sum(turnover) as turnover
-    ,sum(quantity) as items_count
+    ,sum(qty) as items_count
     ,count(*) as product_id_unique
 from
     {{ ref("int_sales_stock") }}
