@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw_data_circle
+    tables:
+      - name: sales
+        identifier: raw_cc_sales
+        description: Raw sales data
+        columns:
+          - name: product_id
+            description: product id (model, color, size)
+            tests:
+              - not_null
+          - name: date_date
+            tests:
+              - not_null
+      - name: stock
+        identifier: raw_cc_stock
+        columns:
+          - name: model
+            tests:
+              - not_null
+      - name: parcel
+        identifier: raw_cc_parcel
